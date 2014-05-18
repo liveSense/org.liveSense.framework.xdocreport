@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><features name="liveSense-${liveSense.version}-framework-odfdom" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+    
+    <feature name="liveSense-framework-xdocreport" version="${project.version}" description="XDocReport based document template service core">
+
+        <feature>apache-commons</feature>
+
+        <!--
+         <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.dom4j/1.6.1_5</bundle>
+         -->
+		<feature>liveSense-framework-dom4j</feature>
+		<feature>liveSense-framework-odfdom</feature>
+		<feature>liveSense-framework-itext</feature>
+		<feature>liveSense-framework-poi</feature>
+		<feature>liveSense-framework-docx4j</feature>
+		
+		<!-- <bundle>mvn:de.twentyeleven.skysail/org.apache.poi-osgi/3.8</bundle> -->
+		<!-- <bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.poi/3.8_3</bundle> -->
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.velocity/1.7_6</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.oro/2.0.8_6</bundle>
+		<bundle>mvn:org.apache.servicemix.bundles/org.apache.servicemix.bundles.freemarker/2.3.20_1</bundle>
+
+        
+        <!--
+		<bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.core/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.template/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.document/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.converter/${xdocreport.version}</bundle>
+        
+		<bundle>mvn:fr.opensagres.xdocreport/org.odftoolkit.odfdom.converter.core/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/org.odftoolkit.odfdom.converter.xhtml/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/org.odftoolkit.odfdom.converter.pdf/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.itext.extension/${xdocreport.version}</bundle>
+        
+		<bundle>mvn:fr.opensagres.xdocreport/org.apache.poi.xwpf.converter.xhtml/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/org.apache.poi.xwpf.converter.pdf/${xdocreport.version}</bundle>
+		<bundle>mvn:fr.opensagres.xdocreport/org.apache.poi.xwpf.converter.core/${xdocreport.version}</bundle>
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.document.docx/${xdocreport.version}</bundle>
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.document.odt/${xdocreport.version}</bundle>
+         
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.template.velocity/${xdocreport.version}</bundle>
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.template.freemarker/${xdocreport.version}</bundle>
+         
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.converter.odt.odfdom/${xdocreport.version}</bundle>
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.converter.docx.xwpf/${xdocreport.version}</bundle>
+         <bundle>mvn:fr.opensagres.xdocreport/fr.opensagres.xdocreport.converter.docx.docx4j/${xdocreport.version}</bundle>
+         
+         <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+
+         -->
+        <bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+
+	</feature>
+    
+</features>
