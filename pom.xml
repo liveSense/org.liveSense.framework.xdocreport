@@ -29,6 +29,7 @@
 
 	<properties>
 		<xdocreport.version>1.0.4</xdocreport.version>
+        <maven.javadoc.skip>true</maven.javadoc.skip>
 	</properties>
 	<scm>
 		<connection>scm:git:https://github.com/liveSense/org.liveSense.framework.xdocreport.git</connection>
