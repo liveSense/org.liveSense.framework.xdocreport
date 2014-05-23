@@ -25,6 +25,8 @@
 		<version>1.0.4-SNAPSHOT</version>
 		<relativePath>..</relativePath>
 	</parent>
+    <version>1.0.4-SNAPSHOT</version>
+
 	<properties>
 		<xdocreport.version>1.0.4</xdocreport.version>
 	</properties>
