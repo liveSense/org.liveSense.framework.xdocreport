@@ -55,11 +55,12 @@
 				<configuration>
 					<instructions>
 						<_exportcontents>
-							fr.opensagres.xdocreport.converter.*;version=${xdocreport.version},
-							fr.opensagres.xdocreport.core.*;version=${xdocreport.version},
-							fr.opensagres.xdocreport.document.*;version=${xdocreport.version},
-							fr.opensagres.xdocreport.template.*;version=${xdocreport.version}
+							fr.opensagres.xdocreport.*;version=${xdocreport.version},
+							org.apache.poi.xwpf.converter.*;version=${xdocreport.version},
+							org.odftoolkit.odfdom.converter.*;version=${xdocreport.version},
 						</_exportcontents>
+						<Export-Package>
+						</Export-Package>
 						<Import-Package>
 							javax.servlet.*;resolution:=optional,
 							org.apache.commons.fileupload.*;resolution:=optional,
@@ -68,11 +69,11 @@
 
 
 						<!-- bundle supplied resource prefixes -->
-						<Include-Resource>{maven-resources}</Include-Resource>
+						<Include-Resource>{maven-resources}, target/classes</Include-Resource>
 
 						<!-- Do not inline jars, include as jar files -->
 						<!-- There are config files with same name will be overwritten -->
-						<Embed-Dependency>*;scope=compile;inline=false</Embed-Dependency>
+						<Embed-Dependency>*;scope=compile;inline=true</Embed-Dependency>
 
 
 					</instructions>
